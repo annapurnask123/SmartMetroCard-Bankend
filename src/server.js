@@ -2,11 +2,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
+
 import mongoose from "mongoose";
 import cors from "cors";
 
-// Since you use ES modules for dotenv, let's also use import for models if possible
-import User from "./models/User.js"; // if your environment supports .js extension or adjust accordingly
+
+import User from "./models/User.js"; 
 import Station from "./models/Station.js";
 
 const app = express();
